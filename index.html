@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Health & Fitness Tracker</h1>
+    </header>
+    <main>
+        <section class="tracker">
+            <h2>Track Your Activity</h2>
+            <form id="tracker-form">
+                <label for="steps">Steps:</label>
+                <input type="number" id="steps" placeholder="Enter steps" required>
+                
+                <label for="water">Water Intake (liters):</label>
+                <input type="number" id="water" placeholder="Enter water intake" required>
+                
+                <label for="sleep">Sleep (hours):</label>
+                <input type="number" id="sleep" placeholder="Enter sleep hours" required>
+
+                <button type="submit">Track</button>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Your Progress</h2>
+            <div id="results-output">
+                <!-- Results will be shown here -->
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
